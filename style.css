@@ -1,0 +1,133 @@
+.x {
+    background-color: black;
+    height: 75px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.x h1 {
+    font-size: 60px;
+    animation-name: move;
+    animation-duration: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0%);
+    }
+
+    20% {
+        transform: translateY(-100%);
+    }
+
+    30% {
+        transform: translateY(-200%);
+    }
+
+    40% {
+        transform: translateY(-300%);
+    }
+
+    50% {
+        transform: translateY(-400%);
+    }
+
+    60% {
+        transform: translateY(-500%);
+    }
+
+    70% {
+        transform: translateY(-600%);
+    }
+
+    80% {
+        transform: translateY(-700%);
+    }
+
+    90% {
+        transform: translateY(-800%);
+    }
+
+    100% {
+        transform: translateY(-900%);
+    }
+}
+
+.nav2 #h1 {
+
+    animation: color 3s 3s linear infinite alternate;
+}
+
+@keyframes color {
+    0% {
+        color: #fff;
+    }
+
+    100% {
+        color: yellow;
+    }
+}
+
+
+.nav2 #h2 {
+
+    animation: color1 3s 5s linear infinite alternate;
+}
+
+@keyframes color1 {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: rgb(0, 255, 183);
+    }
+}
+
+.nav2 #h3 {
+
+    animation: color2 3s 7s linear infinite alternate;
+
+}
+
+@keyframes color2 {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: rgb(85, 0, 255);
+    }
+}
+
+nav h1{
+    position: relative;
+}
+
+nav h1::after{
+    content: "";
+    height: 1.2px;
+    width: 0;
+    background-color: #fff;
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    transition: all ease 1s;
+}
+
+nav h1:hover::after{
+    width: 100%;
+}
+
+.page3 .body .left{
+    height: 95vh;
+}
+
+.page7 .body .strip:hover{
+    cursor: pointer;
+}
+
+h1 span{
+    display: inline-block       ;
+}
